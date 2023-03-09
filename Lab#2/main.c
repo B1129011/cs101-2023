@@ -20,8 +20,16 @@ void employee_info(employee_t my_emp) {
 }
 
 int main() {
-    employee_t employee_1 = {88, "IU Lee", 18, "0937123456", 1000.30};
-    printf("Size of employee_t: %ld\n\n", sizeof(employee_t));
-    employee_info(employee_1);
+    employee_t my_emp;
+    
+    my_emp.em_id = 1;
+    my_emp.em_salary = 1000.30;
+    my_emp.em_age = 18;
+    strcpy(my_emp.em_name,"IU Lee");
+    strcpy(my_emp.em_phone,"0937123256");
+    printf("%d\n",(int)sizeof(employee_t));
+    
+    employee_info(my_emp);
+    
     return 0;
-} 
+}
