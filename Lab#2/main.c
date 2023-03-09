@@ -27,7 +27,7 @@ int main() {
     my_emp.em_age = 18;
     strcpy(my_emp.em_name,"IU Lee");
     strcpy(my_emp.em_phone,"0937123256");
-    printf("%d\n",(int)sizeof(employee_t));
+    printf("%d\n\n",(int)sizeof(employee_t));
     
     employee_info(my_emp);
     
